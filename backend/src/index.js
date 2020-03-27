@@ -3,12 +3,8 @@ const app = express();
 const router = require("./routes");
 const cors = require("cors");
 
-
-
-
-
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 app.use(router);
 
 app.listen("8000");
